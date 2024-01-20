@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Contacto</h1>
+    <span class="subheading">Información</span>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>¡Contáctanos!
+
+                    En ReservaHotelera, valoramos tu experiencia y estamos aquí para 
+                    ayudarte en cada paso de tu viaje. Si tienes preguntas, comentarios o 
+                    necesitas asistencia, no dudes en ponerte en contacto con nuestro equipo 
+                    dedicado de atención al cliente.</p>
+                <br>
+                <p><b>Telefono:</b>+09 876 543 210</p>
+                <p><b>Dirección de correo electrónico:</b>info@reservahotelera.com</p>
+                <p>¡Gracias por elegir ReservaHotelera para tus necesidades de alojamiento! 
+                    stamos emocionados de ser parte de tu experiencia de viaje y esperamos 
+                    poder atenderte pronto. 
+                    ¡Viaja con confianza con ReservaHotelera!</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Reservas{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/bg-reservas.jpeg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Reserva Hotelera</h1>
+    <span class="subheading">Habitaciones</span>
+{% endblock %}
+
+{% block content %}
+    {% for habitacion in habitaciones %}
+    
+        <!-- Proyecto -->
+            <div class="row project">
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{{ habitacion.imagen.url }}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">{{ habitacion.tipo }}</h2>
+                <p>N° maximo de personas: {{ habitacion.numero_maximo_personas }}</p>
+                <p>Precio: {{ habitacion.precio }}</p>
+                {% if habitacion.link %}
+                    <p><a href="{{habitacion.link}}">Más información</a></p>
+                {% endif %}
+            </div>
+            </div>
+            </div>
+    {% endfor %}
+{% endblock %}

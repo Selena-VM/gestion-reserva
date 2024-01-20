@@ -1,0 +1,89 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/bg-reservas.jpeg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Reserva Hotelera</span>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid avatar" src="{% static 'core/img/acercade.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Reserva Hotelera</h2>
+            <p>¡Bienvenido a ReservaHotelera.com, tu destino virtual para experiencias de viaje inolvidables! 
+                En nuestra plataforma, te ofrecemos la manera más fácil y conveniente de asegurar 
+                tu alojamiento perfecto en cualquier parte del mundo.</p>
+            <p>Explora una amplia gama de opciones de alojamiento, desde lujosos hoteles boutique 
+                hasta acogedores hostales, y encuentra la opción que se adapte a tus necesidades y presupuesto.<br></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <h1 class="text-center">Que dicen las personas...</h1>
+        <div class="row">
+                <div class="col-md-4">
+        <div class="card p-3 text-center px-4">
+            <div class="user-image">
+                <img src=".././static/assets/jojo.jpg" class="rounded-circle" width="80">
+            </div>
+            <div class="user-content">
+                <h5 class="mb-0">Jojo</h5>
+                <span>Desarrollador de Software</span>
+                <p>Que momento para estar en vivo... no podría haber pensado en una mejor manera de hacer esto...</p>
+            </div>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 text-center px-4">
+            <div class="user-image">        
+                <img src=".././static/assets/omondi.jpg" class="rounded-circle" width="80">
+            </div>
+            <div class="user-content">
+                <h5 class="mb-0">Omondi</h5>
+                <span>Ingeniero de Software</span>
+                <p>Hablando de convivencia... todo el proceso fue sencillo y sin complicaciones.</p>
+            </div>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 text-center px-4">
+            <div class="user-image">
+        <img src=".././static/assets/sara.jpg" class="rounded-circle" width="80">
+            </div>
+            <div class="user-content">
+                <h5 class="mb-0">Sarah B</h5>
+                <span>Desarrolladora de software</span>
+                <p> ¡Altamente recomendado!</p>
+            </div>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
